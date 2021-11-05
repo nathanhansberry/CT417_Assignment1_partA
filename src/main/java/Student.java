@@ -78,19 +78,5 @@ public class Student {
         return name;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == this) {
-            return true;
-        }
-        if (!(o instanceof Student)) {
-            return false;
-        }
-        // typecast o to Complex so that we can compare data members
-        Student s = (Student) o;
-
-        // Compare the data members and return accordingly
-        return CharSequence.compare(name, ((Student) o).getName()) == 0;
-    }
 }
 
