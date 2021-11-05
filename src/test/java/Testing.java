@@ -25,7 +25,7 @@ public class Testing {
     }
 
     //Test 2 creates a student object and deliberately fails to ensure the assertEquals fails the build when there is a mistake
-    @Test
+    //@Test
     public void test2(){
         System.out.print("This test should fail");
         Student student = new Student("Ally Smith", new DateTime(2001, 5, 20, 0, 0), 17111111);
@@ -42,4 +42,7 @@ public class Testing {
         c1.addModule(m);
         assertEquals((c1.getModules().get(0).getName()), "Programming III");
     }
+
 }
+
+
