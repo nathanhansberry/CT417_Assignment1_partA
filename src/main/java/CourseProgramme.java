@@ -54,8 +54,17 @@ public class CourseProgramme {
     // Method for adding modules to courses
     public void addModule(Modules m) {
         modules.add(m);
+        setStudents(m);
     }
-
+    private void setStudents(Modules m){
+        for(Modules x: modules){
+            for(Student s: x.getStudents()){
+                if(!students.contains(s)) {
+                    students.add(s);
+                }
+            }
+        }
+    }
     //ToString method for printing course name by default
     @Override
     public String toString(){
