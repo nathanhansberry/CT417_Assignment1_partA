@@ -24,7 +24,7 @@ pipeline {
       
       steps {
         echo 'Deploying the project.'
-        bat "gradle war"
+        bat "gradlew war"
       }
     }
   }
