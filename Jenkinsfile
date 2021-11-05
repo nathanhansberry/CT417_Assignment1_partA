@@ -16,7 +16,7 @@ pipeline {
       
       steps {
         echo 'Testing the project.'
-        bat "gradlew test" //--tests SampleTest"
+        bat "gradlew test --tests SampleTest.test1"
       }
     }
     
